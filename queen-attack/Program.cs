@@ -10,18 +10,27 @@ namespace Board
     {
       int anotherX = 0;
       int anotherY = 0;
-      Console.WriteLine("Enter queen X: ");
-      int queenX = int.Parse(Console.ReadLine());
-      Console.WriteLine("Enter queen Y: ");
-      int queenY = int.Parse(Console.ReadLine());
+      int queenX = 0;
+      int queenY = 0;
+
+      do
+      {
+        Console.Write("Enter queen X: ");
+        queenX = int.Parse(Console.ReadLine());
+        Console.Write("Enter queen Y: ");
+        queenY = int.Parse(Console.ReadLine());
+      } while (queenX < 1 || queenX > 8 || queenY < 1 || queenY > 8);
 
       Queen queen = new Queen(queenX, queenY);
       queen.ShowBoard(anotherX, anotherY);
 
-      Console.WriteLine("Enter another X: ");
-      anotherX = int.Parse(Console.ReadLine());
-      Console.WriteLine("Enter another Y: ");
-      anotherY = int.Parse(Console.ReadLine());
+      do
+      {
+        Console.Write("Enter another X: ");
+        anotherX = int.Parse(Console.ReadLine());
+        Console.Write("Enter another Y: ");
+        anotherY = int.Parse(Console.ReadLine());
+      } while (anotherX < 1 || anotherX > 8 || anotherY < 1 || anotherY > 8);
 
       queen.ShowBoard(anotherX, anotherY);
 
