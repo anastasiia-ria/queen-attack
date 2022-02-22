@@ -1,0 +1,15 @@
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.csproj.AssemblyReference.cache
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.AssemblyInfoInputs.cache
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.AssemblyInfo.cs
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.csproj.CoreCompileInputs.cache
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/QueenAttack.deps.json
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/QueenAttack.runtimeconfig.json
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/QueenAttack.runtimeconfig.dev.json
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/QueenAttack.dll
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/ref/QueenAttack.dll
+/Users/anastasiiariabets/Desktop/queen-attack/bin/Debug/net5.0/QueenAttack.pdb
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.dll
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/ref/QueenAttack.dll
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.pdb
+/Users/anastasiiariabets/Desktop/queen-attack/obj/Debug/net5.0/QueenAttack.genruntimeconfig.cache

@@ -23,36 +23,77 @@ namespace Board.Location
       return attack;
     }
 
+    public void color(bool black)
+    {
+      if (black)
+      {
+        Console.BackgroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.White;
+      }
+      else
+      {
+        Console.BackgroundColor = ConsoleColor.White;
+        Console.ForegroundColor = ConsoleColor.Black;
+      }
+    }
     public void ShowBoard(int anotherX, int anotherY)
     {
-      for (int i = 0; i < 8; i++)
+      ConsoleColor currentForeground = Console.ForegroundColor;
+      ConsoleColor currentBackground = Console.BackgroundColor;
+      bool black = false;
+
+      string[] letters = new string[] { "  ", "A", "B", "C", "D", "E", "F", "G", "H" };
+      for (int i = 0; i < 9; i++)
       {
-        for (int j = 0; j < 8; j++)
+        for (int j = 0; j < 9; j++)
         {
-          string square = "_";
-          if (QueenX - 1 == i && QueenY - 1 == j)
+          color(black);
+          black = !black;
+          string square = "  ";
+          if (QueenX == i && QueenY == j)
           {
-            square = "Q";
+            square = "Q ";
           }
-          else if (anotherX - 1 == i && anotherY - 1 == j)
+          else if (anotherX == i && anotherY == j && i != 0 && j != 0)
           {
-            square = "A";
+            square = "A ";
           }
 
-          if (j == 0)
+          if (i == 0)
           {
-            Console.Write("|" + square + "|");
+            if (j == 8)
+            {
+              current(currentBackground, currentForeground);
+              Console.WriteLine(letters[j] + " ");
+            }
+            else
+            {
+              current(currentBackground, currentForeground);
+              Console.Write(letters[j] + " ");
+            }
           }
-          else if (j == 7)
+          else if (j == 0 && i > 0)
           {
-            Console.WriteLine(square + "|");
+            current(currentBackground, currentForeground);
+            Console.Write(i + " ");
+          }
+          else if (j == 8)
+          {
+            Console.Write(square);
+            current(currentBackground, currentForeground);
+            Console.WriteLine();
           }
           else
           {
-            Console.Write(square + "|");
+            Console.Write(square);
           }
         }
       }
+    }
+    public void current(ConsoleColor currentBackground, ConsoleColor currentForeground)
+    {
+      Console.BackgroundColor = currentBackground;
+      Console.ForegroundColor = currentForeground;
     }
   }
 }
